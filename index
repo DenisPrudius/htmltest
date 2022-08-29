@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Rockstar Trailer Siute</title>
+        <link href="Rockstar.css" rel="stylesheet" type="text/css">   
+    
+    </head>
+    <body>
+        <nav class="top-menu">
+            <ul class="menu-main">
+              <li class="left-item"><a href="">Work</a></li>
+              <li class="left-item"><a href="">About</a></li>
+              <li class="left-item"><a href="">Story</a></li>
+              <li class="right-item"><a href="https://www.rockstargames.com/contact">Contact</a></li>
+              <li class="right-item"><a href="https://store.rockstargames.com/">Shop</a></li>
+              <li class="right-item"><a href="Galerry">Gallery</a></li>
+          </ul>
+            <a class="navbar-logo" href="index"><img src="pngwing.com(3).png"></a>
+          </nav>
+        <p> Grand Theft Auto</p>    
+    </body>
+</html>

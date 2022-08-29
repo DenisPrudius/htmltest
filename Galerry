@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link href="Gallery.css" rel="stylesheet" type="text/css">   
+    
+    </head>
+    <body>
+        <nav class="top-menu">
+            <ul class="menu-main">
+              <li class="left-item"><a href="">Work</a></li>
+              <li class="left-item"><a href="">About</a></li>
+              <li class="left-item"><a href="">Story</a></li>
+              <li class="right-item"><a href="https://www.rockstargames.com/contact">Contact</a></li>
+              <li class="right-item"><a href="https://store.rockstargames.com/">Shop</a></li>
+              <li class="right-item"><a href="">Gallery</a></li>
+          </ul>
+            <a class="navbar-logo" href="index"><img src="pngwing.com(3).png"></a>
+          </nav>
+        <p> Gallery</p>
+         <!-- The grid: four columns -->
+<div class="row">
+    <div class="column">
+      <img src="logo.png" alt="Nature" onclick="openImg(this);">
+    </div>
+    <div class="column">
+      <img src="logo.png" alt="Snow" onclick="openImg(this);">
+    </div>
+    <div class="column">
+      <img src="logo.png" alt="Mountains" onclick="openImg(this);">
+    </div>
+    <div class="column">
+      <img src="logo.png" alt="Lights" onclick="openImg(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:0%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>     
+  <script>function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  } </script>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+p {
+    color: white;
+    width: 1800px;
+    font-size: 200px;
+    text-align: center;
+    font-family: GTA;
+    text-shadow: 4px 0 4px black, 
+    0 4px 4px black, 
+    -4px 0 4px black, 
+    0 -4px 4px black;
+}
+
+  @font-face {
+    font-family: "GTA"; 
+    src: url("/home/denis/Desktop/Lession 2/Rockstar Games/SAYT.html/GTA.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  }
+
+
+  @font-face {
+    font-family: "Vice"; 
+    src: url("/home/denis/Desktop/Lession 2/Rockstar Games/SAYT.html/Vice.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  }
+  
+
+  html {
+    background-image: url(GTA5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+
+  }
+
+
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34,.2);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: 'Vice', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 4px 0 4px rgb(199, 20, 175), 
+    0 4px 4px rgb(199, 20, 175), 
+    -4px 0 4px rgb(199, 20, 175), 
+    0 -4px 4px rgb(199, 20, 175);
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
